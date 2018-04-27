@@ -17,5 +17,5 @@ head -c $HLENGTH $FILENAME.bmp > $FILENAME"_g.bmp"
 tail -c +$HLENGTH .soxed >> $FILENAME"_g.bmp"
 
 rm .soxed
-mv $FILENAME.bmp webapp/images/original
-mv $FILENAME"_g.bmp" webapp/images/glitched
+mv $FILENAME.bmp ~/webapp/images/original
+mv $FILENAME"_g.bmp" ~/webapp/images/glitched

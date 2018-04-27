@@ -9,7 +9,7 @@ else
   FILENAME=${1%.bmp}
 fi
 
-raspistill -e bmp -o $FILENAME.bmp -rot 270 -height 1080 -width 1920
+raspistill -e bmp -o $FILENAME.bmp -rot 270 -h 1080 -w 1920
 echo "Picture captured"
 sox -V1 -t raw -r 44100 -e mu-law -b 8 -c 1 $FILENAME.bmp -t raw -r 44100 -e mu-law -b 8 -c 1 .soxed $EFFECT
 

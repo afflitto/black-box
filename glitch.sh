@@ -13,9 +13,9 @@ raspistill -e bmp -o $FILENAME.bmp -rot 270 -h 1080 -w 1920
 echo "Picture captured"
 sox -V1 -t raw -r 44100 -e mu-law -b 8 -c 1 $FILENAME.bmp -t raw -r 44100 -e mu-law -b 8 -c 1 .soxed $EFFECT
 
-head -c $HLENGTH $FILENAME.bmp > $FILENAME"_g.bmp"
-tail -c +$HLENGTH .soxed >> $FILENAME"_g.bmp"
+head -c $HLENGTH $FILENAME.bmp > .output
+tail -c +$HLENGTH .soxed >> .output
 
 rm .soxed
 mv $FILENAME.bmp ~/webapp/images/original
-mv $FILENAME"_g.bmp" ~/webapp/images/glitched
+mv .output ~/webapp/images/glitched/$FILENAME.bmp

@@ -1,0 +1,14 @@
+bass -10
+bass 10
+treble -10
+treble 10
+highpass 1000
+hilbert
+delay 2.5
+pitch 2.5
+bandpass 1000 40
+bandreject 1000 100
+chorus 0.7 0.9 50 0.4 0.25 2 -s
+flanger
+phaser 0.8 0.74 3 0.4 0.5 -s
+reverb

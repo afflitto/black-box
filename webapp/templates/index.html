@@ -1,0 +1,18 @@
+<html>
+        <head>
+                <title>Glitch cam</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        </head>
+        <body>
+                <h1>Glitch cam</h1>
+
+                {% for image in images %}
+                {% if not image.startswith('.') %}
+                        <div class="col-md-4" style="margin-bottom:30px">
+                                <img src={{ "images/glitched/"+image }} style="width:100%"></img>
+                                <a href={{ "images/original/"+image }} >Original</a>
+                        </div>
+                {% endif %}
+                {% endfor %}
+        </body>
+</html>

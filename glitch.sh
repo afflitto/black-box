@@ -20,6 +20,6 @@ head -c $HLENGTH $FILENAME.bmp > .output
 tail -c +$HLENGTH .soxed >> .output
 
 rm .soxed
-mv $FILENAME.bmp ~/webapp/images/original
-mv .output ~/webapp/images/glitched/$FILENAME.bmp
+mv $FILENAME.bmp webapp/images/original
+mv .output webapp/images/glitched/$FILENAME.bmp
 gpio write 8 0

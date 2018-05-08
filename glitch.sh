@@ -1,5 +1,5 @@
 #!/bin/bash
-EFFECT=$(shuf -n 2 effects.txt | tr -s \\n " ")
+EFFECT=$(shuf -n 2 ~/black-box/effects.txt | tr -s \\n " ")
 echo $EFFECT
 HLENGTH=160
 
@@ -8,6 +8,8 @@ if [ -z "$1" ] ; then
 else
   FILENAME=${1%.bmp}
 fi
+
+cd ~/black-box
 
 gpio write 8 1
 gpio pwm 1 140

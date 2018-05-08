@@ -1,0 +1,14 @@
+[Unit]
+Description=Wait for button input
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/black-box/button.py
+StandardOutput=syslog
+StandardError=syslog
+User=pi
+Group=pi
+Type=idle
+
+[Install]
+WantedBy=multi-user.target

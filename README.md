@@ -22,15 +22,18 @@ Items needed:
 *more detailed hardware instructions coming soon (schematics, etc)*
 
 Install required software
-```sudo apt-get install git python wiring-pi
+```
+sudo apt-get install git python wiring-pi
 ```
 
 Clone this repository into the home directory on your Raspberry Pi
-```git clone https://github.com/afflitto/black-box
+```
+git clone https://github.com/afflitto/black-box
 ```
 
 Execute the installer script:
-```cd ~/black-box
+```
+cd ~/black-box
 sudo chmod 755 *.sh
 ./install.sh
 sudo reboot

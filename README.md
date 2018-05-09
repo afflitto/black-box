@@ -19,6 +19,7 @@ Items needed:
 - Misc buttons, wires, LEDs, etc
 - 3D printed enclosure
 
+![Schematic](Examples/schematic.png)
 *more detailed hardware instructions coming soon (schematics, etc)*
 
 Install required software

@@ -16,7 +16,7 @@ Items needed:
 - Raspberry Pi Camera
 - Adafruit PowerBoost 500 Charger
 - 500mAh LiPo Battery
-- Servo
+- Servo (optional)
 - Misc buttons, wires, LEDs, etc
 - 3D printed enclosure (source files available [here](https://cad.onshape.com/documents/00e8311b8a503860a813edb1/w/4b32e54c5edc5f4e2bd6dd65/e/09960cee0905d2651915b789))
 
